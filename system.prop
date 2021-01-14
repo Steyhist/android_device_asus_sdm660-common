@@ -37,6 +37,9 @@ debug.sf.disable_client_composition_cache=1
 # DPM
 persist.vendor.dpm.feature=1
 
+# GBoard
+ro.com.google.ime.kb_pad_port_b=1
+
 # GPS
 persist.vendor.overlay.izat.optin=rro
 
