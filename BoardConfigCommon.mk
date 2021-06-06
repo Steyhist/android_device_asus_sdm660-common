@@ -62,6 +62,7 @@ TARGET_EXFAT_DRIVER := exfat
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # FM
+
 BOARD_HAS_QCA_FM_SOC := cherokee
 BOARD_HAVE_QCOM_FM := true
 
@@ -119,9 +120,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
-
-# Platform
-TARGET_BOARD_PLATFORM := sdm660
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
