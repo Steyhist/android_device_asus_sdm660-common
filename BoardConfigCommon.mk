@@ -38,6 +38,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# Bypass build time check on uses_libs until vendor fixes all their apps
+RELAX_USES_LIBRARY_CHECK := true
+
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
