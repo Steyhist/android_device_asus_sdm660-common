@@ -44,6 +44,9 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# Bypass build time check on uses_libs until vendor fixes all their apps
+RELAX_USES_LIBRARY_CHECK := true
+
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
