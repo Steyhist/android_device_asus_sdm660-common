@@ -338,7 +338,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power-service \
+    android.hardware.power-impl \
     vendor.qti.hardware.perf@2.0.vendor \
     android.hardware.power.stats@1.0-service.mock
 
@@ -364,6 +365,10 @@ PRODUCT_PACKAGES += \
 # QTI Performance
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
+
+# QTI Bluetooth
+include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk
+$(callinherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
 
 # Radio
 PRODUCT_PACKAGES += \
