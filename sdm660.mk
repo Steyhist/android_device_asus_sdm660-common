@@ -23,10 +23,6 @@ TARGET_BOARD_PLATFORM := sdm660
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# Adapt Launch
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
@@ -341,7 +337,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
     android.hardware.power-impl \
-    vendor.qti.hardware.perf@2.0.vendor \
     android.hardware.power.stats@1.0-service.mock
 
 # Public Libraries
@@ -362,6 +357,10 @@ PRODUCT_PACKAGES += \
 # QNS
 PRODUCT_PACKAGES += \
     libstdc++.vendor
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # QTI Performance
 PRODUCT_COPY_FILES += \
