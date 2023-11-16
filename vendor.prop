@@ -81,6 +81,11 @@ persist.vendor.service.bdroid.sibs=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.qcom.bluetooth.soc=cherokee
 
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+persist.sys.sf.disable_blurs=1
+
 # Camera
 persist.vendor.camera.eis.enable=1
 persist.vendor.camera.ois.disable=1
