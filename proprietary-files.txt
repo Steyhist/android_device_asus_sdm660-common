@@ -429,8 +429,8 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
-# Radio - from cmi RKQ1.200710.002-V12.1.2.0.RJACNXM
-system_ext/framework/qti-telephony-common.jar|98951c48563c5846a58c9a3c4c254f32d0741f36
+# Radio - from LA.QSSI.11.0.r1-11600
+system_ext/framework/qti-telephony-common.jar|0d3da7628506d66852de19f296a05f728710c4e3
 
 # Radio
 -product/app/datastatusnotification/datastatusnotification.apk
