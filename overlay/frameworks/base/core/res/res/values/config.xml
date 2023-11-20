@@ -150,7 +150,6 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>60</item>
     </integer-array>
-</resources>
 
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
